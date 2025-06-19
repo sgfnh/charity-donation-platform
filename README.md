@@ -1,1 +1,1 @@
-charity donation platform where user can explore campaign and donat.
+charity donation platform where user can explore campaign and donate.

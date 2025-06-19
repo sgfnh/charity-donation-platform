@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 30px;
+}
+
+.campaign {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ddd;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.campaign img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.campaign-details {
+  flex: 1;
+}
+
+.campaign-details h3 {
+  margin-top: 0;
+}
+
+.tags {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.donate-btn {
+  padding: 8px 14px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.donate-btn:hover {
+  background: #218838;
+}

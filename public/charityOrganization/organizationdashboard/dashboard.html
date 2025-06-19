@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/charityOrganization/organizationdashboard/dashboard.css">
+</head>
+
+<body>
+  <div id="header">
+    <div id="orgName">Loading organization...</div>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <div class="section">
+    <h3>Dashboard</h3>
+    <p>Welcome to your charity dashboard. You can manage your profile, view donations, and launch campaigns here.</p>
+    <div class="section">
+      <h3>Launch New Campaign</h3>
+      <form id="campaignForm">
+        <input type="text" id="title" placeholder="Campaign Title" required /><br />
+        <textarea id="description" placeholder="Campaign Description"></textarea><br />
+        <input type="text" id="imageUrl" placeholder="Image URL (optional)" />
+        <input type="text" id="tags" placeholder="Tags (comma separated)" />
+
+        <button type="submit">Launch Campaign</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h3>Your Campaigns</h3>
+      <ul id="campaignList"></ul>
+    </div><!-- Add additional sections as needed -->
+  </div>
+</body>
+<script src="/charityOrganization/organizationdashboard/dashboard.js"></script>
+
+</html>

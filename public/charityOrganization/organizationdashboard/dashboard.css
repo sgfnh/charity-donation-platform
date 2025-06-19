@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background-color: #f0f2f5;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#orgName {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#logoutBtn {
+  padding: 8px 14px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logoutBtn:hover {
+  background: #b02a37;
+}
+
+.section {
+  margin-top: 30px;
+}

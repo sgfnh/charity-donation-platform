@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/donate/donate.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../home/home.html">Home</a>
+
+  </div>
+  <div class="container">
+    <h1>Make a Donation</h1>
+    <form id="donationForm">
+
+      <p><strong>Name:</strong> <span id="name"></span></p>
+      <label for="amount">Amount ($):</label>
+      <input type="number" id="amount" required min="1">
+
+      <label for="cause">Cause:</label>
+      <select id="cause" required>
+        <option value="">Select a cause</option>
+        <option value="Education">Education</option>
+        <option value="Health">Health</option>
+        <option value="Environment">Environment</option>
+      </select>
+
+      <button type="submit">Donate</button>
+    </form>
+    <button id="downloadBtn">Download History as CSV</button>
+    <h2>Donation Records</h2>
+    <ul id="donationList"></ul>
+    <div class="pagination">
+      <button id="prevPage">Previous</button>
+      <span id="pageIndicator">Page 1</span>
+      <button id="nextPage">Next</button>
+    </div>
+
+  </div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"> </script>
+<script src="/donate/donate.js"></script>
+
+</html>

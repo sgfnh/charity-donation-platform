@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="styleSheet" href="profile.css">
+</head>
+
+<body>
+  <div class="hero">
+    <nav>
+
+      <ul>
+        <li><a href="../home/home.html">Home</a></li>
+        <li><a href="../donate/donate.html">Donate</a></li>
+      </ul>
+
+      <button id="userGreeting" style="font-weight:bold;color:white;background-color:orange;" onclick="toggleMenu()">
+
+      </button>
+
+      <div class="sub-menu-wrap" id="sub-menu">
+        <div class="sub-menu">
+
+          <hr>
+          <a href="#" class="sub-menu-link">
+            <img src="../photo/profile.png">
+            <p onclick="toggleEditMenu()">My Profile</p>
+
+            <span>></span>
+          </a>
+
+          <a href="#" class="sub-menu-link">
+            <img src="../photo/logout.png">
+            <p onclick="logout()">Log Out</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="../photo/profile.png">
+            <p onclick="toggleTransaction()">My Transaction</p>
+
+            <span>></span>
+          </a>
+        </div>
+      </div>
+
+    </nav>
+    <div class="container" id="edit-menu">
+      <div class="profile">
+        <form>
+          <h2>My Profile</h2>
+          <div id="profileDisplay">
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Passport:</strong> <span id="passportNumber"></span></p>
+            <p><strong>DOB:</strong> <span id="dateOfBirth"></span></p>
+            <p><strong>PAN:</strong> <span id="panNumber"></span></p>
+            <button onclick="openEditForm()">Edit</button>
+          </div>
+
+          <div id="editForm" style="display:none;">
+            <input type="text" id="editName" placeholder="Name" />
+            <input type="text" id="editPhone" placeholder="Phone" />
+            <input type="text" id="editPassport" placeholder="Passport Number" />
+            <input type="date" id="editDOB" />
+            <input type="text" id="editPAN" placeholder="PAN Number" />
+            <button onclick="updateProfile()">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="transMenu" id="transaction-menu">
+      <table id="transactionTable" border="1" style="margin-top: 15px; width: 100%;">
+        <thead>
+          <tr>
+            <th>PaymentId</th>
+            <th>OrderId</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="transactionBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
+    <button id="donateBtn" style="padding: 15px 30px; font-size: 18px;">Donate</button>
+  </div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="profile.js"></script>
+
+</html>

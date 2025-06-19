@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/login/login.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Login as User:</h2>
+    <form onsubmit="login(event)">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Your password" required>
+
+      <button type="submit" id="loginBtn">Login</button>
+    </form>
+
+
+    <div class="register-link">
+      login as Admin <a href="/adminDashboard/adminLogin.html">Login Here</a>
+      Don't have an account? <a href="/signup/sign.html">Register here</a>
+
+    </div>
+    <div id="user-exists"></div>
+  </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="/login/login.js"></script>
+
+</html>
